@@ -14,7 +14,7 @@ Refer to the above figure for the general architecture of the model. In general,
 ## Data
 The original Data is restricted by the ethics of OpenUp.
 
-### A putative example </br>
+### A putative chat between helpseeker and counsellor </br>
 ~ 你好啊,我叫Julien. 今日你上嚟呢度
 有D咩想同我傾啊?</br>
 ~	唔知咩事，只係覺得攰。我忍左好
