@@ -12,7 +12,7 @@ A knowledge-aware risk assessment (KARA) model is developed to detect the risk o
 Refer to the above figure for the general architecture of the model. In general, there are two components of the KARA model: the knowledge encoder component and the conversation encoder component. We rely on the knowledge encoder component to learn a representation of the suicide-related domain knowledge, and then feed the encoded domain knowledge into the conversation encoder component which analyses the text of conversations, with the encoded domain knowledge, to determine the risk of suicide. 
 
 ## Data
-We released the suicide knowledge graph (SKG). The original Data is restricted by the ethics of OpenUp. 
+We released the suicide knowledge graph (SKG) (see SKG.csv). The original Data is restricted by the ethics of OpenUp. 
 
 ### A putative chat between helpseeker and counsellor </br>
 ~ 你好啊,我叫Julien. 今日你上嚟呢度
@@ -38,12 +38,12 @@ We released the suicide knowledge graph (SKG). The original Data is restricted b
 ~ 算罷啦！ 所有嘢都無改變過。我可以同邊個講？
 想嚇死人？想多一個人痛苦咩？</br>
 
-### The SKG
+### The SKG 
 ![figure](https://github.com/zhongzhixu/OpenUp/blob/master/skg.png)
 
 
 ## Code
-
+conversation_level_KG_multi_input.py
 
 ## Environment
 Python 3.6</br>
