@@ -12,7 +12,7 @@ A knowledge-aware risk assessment (KARA) model is developed to detect the risk o
 Refer to the above figure for the general architecture of the model. In general, there are two components of the KARA model: the knowledge encoder component and the conversation encoder component. We rely on the knowledge encoder component to learn a representation of the suicide-related domain knowledge, and then feed the encoded domain knowledge into the conversation encoder component which analyses the text of conversations, with the encoded domain knowledge, to determine the risk of suicide. 
 
 ## Data
-The original Data is restricted by the ethics of OpenUp.
+We released the suicide knowledge graph (SKG). The original Data is restricted by the ethics of OpenUp. 
 
 ### A putative chat between helpseeker and counsellor </br>
 ~ 你好啊,我叫Julien. 今日你上嚟呢度
@@ -38,25 +38,19 @@ The original Data is restricted by the ethics of OpenUp.
 ~ 算罷啦！ 所有嘢都無改變過。我可以同邊個講？
 想嚇死人？想多一個人痛苦咩？</br>
 
+### The SKG
+![figure](https://github.com/zhongzhixu/OpenUp/blob/master/skg.png)
+
+
 ## Code
-```
-library(SCCS)
-dats <- read.csv('simulated_data.csv',header = TRUE)
-dat <- dats
-#-----------------------------------
-# Multiple exposure types
-ageg=c(300,600,900)
-con.mod <- standardsccs(event~first_treatment_start+sub_treatment_start+age, indiv=case_id,
-                        astart=obs_start, aend=obs_end, aevent=eventdate,
-                        adrug =cbind(first_treatment_start,sub_treatment_start),
-                        aedrug=cbind(first_treatment_end,sub_treatment_end),
-                        expogrp=list(c(-50,1), c(1)), washout=list(c(0,50), c(0)),
-                        agegrp=ageg, data=dat)
-con.mod
-```
+
+
 ## Environment
-R (version 3.3.2)</br>
-Package "SCCS" (version 1.1)
+Python 3.6</br>
+
+Keras 2.2.4</br>
+
+TensorFlow 1.13.1</br>
 
 
 
