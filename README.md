@@ -5,7 +5,7 @@
 This repository introduces a knowledge-aware NLP model namely KARA. KARA automatically identifies the help-seekers at a high suicide risk in real-time by mining their online counselling conversations.
 
 ### The general design of the KARA
-![figure](https://github.com/zhongzhixu/OpenUp/blob/figure 2.tif)
+![figure](https://github.com/zhongzhixu/OpenUp/blob/design.png)
 
 ## Data
 The original Data used in the paper is restricted by the ethics of Hospital Authority of Hong Kong. Simulated data is provided instead.
